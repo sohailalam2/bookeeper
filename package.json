@@ -1,0 +1,47 @@
+{
+  "name": "bookeeper",
+  "version": "0.1.0",
+  "description": "An awesome nodejs project to show my ninja coding skills :)",
+  "author": "Sohail Alam <sohailalam2@hotmail.com>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint --fix --ext .js ./src",
+    "build": "webpack",
+    "start:dev": "nodemon src/index",
+    "start:prod": "node main",
+    "docker-build": "npm run build && docker-compose build",
+    "up": "docker-compose up -d",
+    "down": "docker-compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "nodemon": "^1.18.10",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
